@@ -9,19 +9,32 @@
     <head>
         <h1>Server Side Calculator</h1>
     </head>    
-       <input type="text" id="numberOne" value="" placeholder="Number">
-       <button onClick="addNumbers()">+</button>
-       <button onClick="subtractNumbers()">-</button>
-       <button onClick="multiplyNumbers()">*</button>
-       <button onClick="divideNumbers()">/</button>
-       <input type="text" id="numberTwo" value="" placeholder="Number">
-       <button onClick="computeNumbers()">=</button>
-       <button onClick="clearNumbers()">C</button>
-
+    <div>
+    <form>
+        <input type="number" id="numberOne" value="" placeholder="Number">
+        <div id="math">
+            <button>+</button>
+            <button>-</button>
+            <button>*</button>
+            <button>/</button>
+        </div>    
+        <input type="number" id="numberTwo" value="" placeholder="Number">
+        <button id="equalButton">=</button>
+        <button id="clearButton">C</button>
+    </form>     
+    </div>
+    <div>
+        <h3><span id="answer"></span></h3>
+    </div>
+    <div id="outputs">
+        <h2 id=answerOut></h2>
+        <ul id="answerHistory"></ul>
+    </div>
 
 
         
         
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="scripts/client.js" charset="utf-8"></script>
     </body>
 </html>
