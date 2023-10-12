@@ -1,6 +1,10 @@
 console.log( 'js' );
 const equalButton = document.querySelector('#equalButton');
 equalButton.addEventListener('click', doCalculation);
+// const clearButton = document.querySelector('#clearButton');
+// clearButton.addEventListener('click', () => {
+    
+// })
 
 
 function getNumbers(){
@@ -44,3 +48,4 @@ function doCalculation(){
     });
 }
 
+function clearButton(){}
