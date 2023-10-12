@@ -13,7 +13,7 @@ function getNumbers(){
             let i = 0;
             for(let get of getCalculation){
                 contentDiv.innerHTML += `
-                <li>${get.numberOne}${get.math}${get.numberTwo}${get.result}</li>
+                <li>${get.numberOne}${get.math}${get.numberTwo} = ${get.result}</li>
             `;
             i += 1;
             }
