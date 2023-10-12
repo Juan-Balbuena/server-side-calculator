@@ -10,18 +10,16 @@
         <h1>Server Side Calculator</h1>
     </head>    
     <div>
-    <form>
         <input type="number" id="numberOne" value="" placeholder="Number">
-        <div id="math">
-            <button>+</button>
-            <button>-</button>
-            <button>*</button>
-            <button>/</button>
-        </div>    
+        <select id="math">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>    
         <input type="number" id="numberTwo" value="" placeholder="Number">
         <button id="equalButton">=</button>
-        <button id="clearButton">C</button>
-    </form>     
+        <button id="clearButton">C</button>    
     </div>
     <div>
         <h3><span id="answer"></span></h3>

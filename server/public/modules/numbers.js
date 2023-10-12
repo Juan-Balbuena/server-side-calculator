@@ -18,20 +18,23 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     console.log('POST Request made');
     let result = 0;
+    let numberOne = Number(req.body.numberOne);
+    let numberTwo = Number(req.body.numberTwo);
+
     if (req.body.math == '+'){
-        result = req.body.numberOne + req.body.numberTwo;
+        result = numberOne + numberTwo;
     } else if (req.body.math == '-'){
-        result = req.body.numberOne - req.body.numberTwo;
+        result = numberOne - numberTwo;
     } else if (req.body.math == '*'){
-        result = req.body.numberOne * req.body.numberTwo;
+        result = numberOne * numberTwo;
     } else if (req.body.math == '/'){
-        result = req.body.numberOne / req.body.numberTwo;
+        result = numberOne / numberTwo;
     }
 
 let newCalculation = {
-    numberOne: req.body.numberOne,
+    numberOne: numberOne,
     math: req.body.math,
-    numberTwo: req.body.numberTwo,
+    numberTwo: numberTwo,
     result: result,
 };
 completedCalculation.push(newCalculation);
